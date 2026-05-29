@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Service</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">LaundryPro</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="user">Surya</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Premium Laundry Services</h1>
+      <p>Fast, affordable, and reliable laundry solutions for you.</p>
+      <button onclick="document.getElementById('booking').scrollIntoView({behavior:'smooth'})">
+        Book a Service Today
+      </button>
+    </div>
+    <div class="hero-right">
+      <img src="data:image/jpeg;base64,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" alt="Laundry Service">
+    </div>
+  </section>
+
+  <!-- Service Overview -->
+  <section class="overview">
+    <div>🧺 15+ Laundry Services</div>
+    <div>😊 240+ Happy Customers</div>
+    <div>⏳ 2+ Years Experience</div>
+  </section>
+
+  <!-- Booking Services Section -->
+  <section id="booking" class="booking">
+    <div class="left">
+      <h2>Available Services</h2>
+      <div class="service">
+        <p>Wash & Fold - ₹200</p>
+        <button onclick="addItem('Wash & Fold',200)">Add Item</button>
+        <button onclick="removeItem('Wash & Fold',200)">Remove Now</button>
+      </div>
+      <div class="service">
+        <p>Dry Cleaning - ₹500</p>
+        <button onclick="addItem('Dry Cleaning',500)">Add Item</button>
+        <button onclick="removeItem('Dry Cleaning',500)">Remove Now</button>
+      </div>
+      <p class="info">👉 Add items to the cart</p>
+    </div>
+
+    <div class="right">
+      <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-list"><li>No items added yet</li></ul>
+        <p>Total: ₹<span id="total">0</span></p>
+      </div>
+      <div class="form">
+        <h2>Book Now</h2>
+        <form id="booking-form">
+          <label>Full Name</label>
+          <input type="text" id="name" required>
+          <label>Email</label>
+          <input type="email" id="email" required>
+          <label>Phone</label>
+          <input type="tel" id="phone" required>
+          <button type="submit">Book Now</button>
+        </form>
+        <p id="confirmation"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Description -->
+  <section class="quality">
+    <h2>Why Choose Us?</h2>
+    <p>✨ Premium Services | ⚡ Quick Support | ⏰ Timely Delivery | 💰 Affordable Prices</p>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <button>Subscribe</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo">LaundryPro</div>
+    <a href="#about">About Us</a>
+    <a href="#">FAQs</a>
+    <a href="#contact">Contact Us</a>
+    <div class="social">🔗 Facebook | 📸 Instagram | 🐦 Twitter</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
